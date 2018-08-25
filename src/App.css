@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #dfdfdf;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+}
+
+.sideBar {
+    position: absolute;
+    background-color: #000;
+    z-index: 1;
+    top: 60px;
+    border-bottom-right-radius: 25px;
+    padding: 10px;
+    opacity: 0.9;
+    -webkit-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    -o-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), -webkit-transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.search-field {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e5e4e4;
+    opacity: 0.5;
+}
+
+.search-field:focus {
+    outline: none;
+    opacity: 1;
+}
+
+.sideBar:hover {
+    opacity: 1;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    text-decoration: none;
+    padding: 5px;
+    list-style-type: none;
+    cursor: pointer;
+    -webkit-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    transition: opacity 0.1s;
+    opacity: 0.6;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+.infoWindow {
+    color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 210px;
+    border: 1px solid #fff;
+    margin-left: 15px;
+}
+
+.title {
+    width: 100%;
+    font-weight: bold;
+}
+
+.rating, .likes, .title {
+    padding: 5px;
+}
+
+.rating {
+    border-radius: 5px;
+    margin-left: 65px;
+}
+
+.address {
+    padding: 5px;
+}
+
+img {
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.hamburger {
+    z-index: 5;
+    position: absolute;
+    border-bottom-right-radius: 5px;
+    top: 30px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.hamburger:hover span {
+    background-color: #000;   
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
